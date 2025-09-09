@@ -1,0 +1,137 @@
+{
+	"info": {
+		"_postman_id": "500a917a-dba0-43b9-acfc-7de22c03d13f",
+		"name": "Product_API_Project",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "46169604",
+		"_collection_link": "https://rohit-6998430.postman.co/workspace/Rohit's-Workspace~aababd8d-0a53-4683-8459-e0ddccf24bec/collection/46169604-500a917a-dba0-43b9-acfc-7de22c03d13f?action=share&source=collection_link&creator=46169604"
+	},
+	"item": [
+		{
+			"name": "GetAll",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/getAllProducts",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"getAllProducts"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetById",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/getById/2",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"getById",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetByName",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/getByName/mobile",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"getByName",
+						"mobile"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetAllByCategory",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/getByCategory/electronics",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"getByCategory",
+						"electronics"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update Product",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\"id\": 1,\r\n\"name\": \"Pen\",\r\n\"category\": \"Stationary\",\r\n\"quantity\": 210,\r\n\"price\": 7,\r\n\"mfg_date\": \"25/09/2024\",\r\n\"exp_date\": \"25/09/2027\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/updateProduct/1",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"updateProduct",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "delete product",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\"id\": 1,\r\n\"price\": 7\r\n}"
+				},
+				"url": {
+					"raw": "localhost:8080/deleteProduct/2",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"deleteProduct",
+						"2"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
